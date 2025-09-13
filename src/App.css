@@ -1,0 +1,22 @@
+/* We will use TailwindCSS for styling, so we can clear this file */
+
+/* --- Animation for shimmer-fast effect --- */
+@keyframes shimmer-fast {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer-fast {
+  animation: shimmer-fast 1s infinite;
+}
+
+/* --- Enhanced glass effect --- */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}

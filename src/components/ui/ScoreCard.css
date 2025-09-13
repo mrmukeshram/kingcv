@@ -1,0 +1,313 @@
+/* ScoreCard.css */
+.score-card-square {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  border-radius: 24px;
+  padding: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Card borders */
+.score-card-square[data-type="technical"] {
+  border: 1px solid rgba(79, 70, 229, 0.15);
+}
+
+.score-card-square[data-type="soft"] {
+  border: 1px solid rgba(147, 51, 234, 0.15);
+}
+
+.score-card-square[data-type="role"] {
+  border: 1px solid rgba(236, 72, 153, 0.15);
+}
+
+.score-card-square[data-type="ats"] {
+  border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+/* Technical Skills Card - Light Blue */
+.score-card-square[data-type="technical"] {
+  background: #EEF2FF;
+  border: 1px solid rgba(67, 97, 238, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(67, 97, 238, 0.15),
+    0 10px 15px -3px rgba(67, 97, 238, 0.08),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.score-card-square[data-type="technical"] .score-card-title,
+.score-card-square[data-type="technical"] .score-card-score,
+.score-card-square[data-type="technical"] .score-card-progress-labels {
+  color: #1e293b;
+}
+
+/* Soft Skills Card - Light Purple */
+.score-card-square[data-type="soft"] {
+  background: #F3E8FF;
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(139, 92, 246, 0.15),
+    0 10px 15px -3px rgba(139, 92, 246, 0.08),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.score-card-square[data-type="soft"] .score-card-title,
+.score-card-square[data-type="soft"] .score-card-score,
+.score-card-square[data-type="soft"] .score-card-progress-labels {
+  color: #1e293b;
+}
+
+/* Role Alignment Card - Light Pink */
+.score-card-square[data-type="role"] {
+  background: #FDF2F8;
+  border: 1px solid rgba(247, 37, 133, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(247, 37, 133, 0.15),
+    0 10px 15px -3px rgba(247, 37, 133, 0.08),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.score-card-square[data-type="role"] .score-card-title,
+.score-card-square[data-type="role"] .score-card-score,
+.score-card-square[data-type="role"] .score-card-progress-labels {
+  color: #1e293b;
+}
+
+/* ATS Compatibility Card - Light Teal */
+.score-card-square[data-type="ats"] {
+  background: #ECFEFF;
+  border: 1px solid rgba(0, 180, 216, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 180, 216, 0.15),
+    0 10px 15px -3px rgba(0, 180, 216, 0.08),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.score-card-square[data-type="ats"] .score-card-title,
+.score-card-square[data-type="ats"] .score-card-score,
+.score-card-square[data-type="ats"] .score-card-progress-labels {
+  color: #1e293b;
+}
+
+/* Missing Keywords Card */
+.score-card-square[data-type="missing-keywords"] {
+  background: white;
+  border: 1px solid rgba(244, 63, 94, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Recruiter View Card */
+.score-card-square[data-type="recruiter-view"] {
+  background: white;
+  border: 1px solid rgba(14, 165, 233, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* ATS Decision Card */
+.score-card-square[data-type="ats-decision"] {
+  background: white;
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Overall Performance Card - Light Warm Gray */
+.score-card-square[data-type="overall-performance"] {
+  background: #FAFAF9;  /* Very light warm gray background */
+  border: 1px solid rgba(120, 113, 108, 0.1);
+  box-shadow: 
+    0 4px 6px -1px rgba(120, 113, 108, 0.15),
+    0 10px 15px -3px rgba(120, 113, 108, 0.08),
+    0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Shared Modern Effects */
+.score-card-square {
+  background: white;
+}
+
+.score-card-square:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 8px 12px -2px rgba(0, 0, 0, 0.2),
+    0 25px 35px -8px rgba(0, 0, 0, 0.15);
+}
+
+/* Score styles */
+.score-card-score {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  line-height: 1 !important;
+}
+
+/* Title styles */
+.score-card-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Icon styles */
+.score-card-icon {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.3s ease !important;
+}
+
+/* Icon colors matching progress bars */
+[data-type="technical"] .score-card-icon {
+  color: #4F46E5 !important;  /* Technical Skills blue */
+}
+
+[data-type="soft"] .score-card-icon {
+  color: #9333EA !important;  /* Soft Skills purple */
+}
+
+[data-type="role"] .score-card-icon {
+  color: #EC4899 !important;  /* Role Alignment pink */
+}
+
+[data-type="ats"] .score-card-icon {
+  color: #06B6D4 !important;  /* ATS Compatibility teal */
+}
+
+.score-card-square:hover .score-card-icon {
+  transform: scale(1.1) !important;
+}
+
+/* Mesh gradient animation */
+@keyframes meshGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.score-card-square:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px -5px rgba(0,0,0,0.2);
+}
+
+.score-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.score-card-progress {
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .score-card-square {
+    padding: 0.75rem !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .score-card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    gap: 0.35rem !important;
+  }
+
+  .score-card-header {
+    margin-bottom: 0.35rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .score-card-icon {
+    width: 2rem !important;
+    height: 2rem !important;
+    border-radius: 0.5rem !important;
+    padding: 0.35rem !important;
+  }
+
+  .score-card-icon svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  .score-card-score {
+    font-size: 1.25rem !important;
+    line-height: 1 !important;
+  }
+
+  .score-card-title {
+    font-size: 0.75rem !important;
+    margin-bottom: 0 !important;
+    line-height: 1.2 !important;
+  }
+
+  .score-card-description {
+    display: none !important; /* Hide description text on mobile */
+  }
+
+  /* Progress bar modern styles */
+  .score-card-progress {
+    margin-top: auto !important;
+    padding-top: 0.5rem !important;
+    position: relative !important;
+  }
+
+  .score-card-progress-bar {
+    height: 0.35rem !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    background: #f1f5f9 !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .score-card-progress-labels {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 0.25rem !important;
+    font-size: 0.7rem !important;
+    font-weight: 500 !important;
+    color: #64748b !important;
+  }
+
+  .score-card-percentage {
+    font-weight: 600 !important;
+    color: #1e293b !important;
+  }
+
+  /* Progress fill styles */
+  [data-type="technical"] .score-card-progress-bar div {
+    background: #4361EE !important;
+  }
+
+  [data-type="soft"] .score-card-progress-bar div {
+    background: #8B5CF6 !important;
+  }
+
+  [data-type="role"] .score-card-progress-bar div {
+    background: #F72585 !important;
+  }
+
+  [data-type="ats"] .score-card-progress-bar div {
+    background: #00B4D8 !important;
+  }
+}

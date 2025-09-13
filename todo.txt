@@ -1,0 +1,4 @@
+- [ ] Delete corrupted node_modules directory
+- [ ] Delete package-lock.json to resolve conflicts
+- [ ] Run fresh npm install
+- [ ] Test npm run dev
